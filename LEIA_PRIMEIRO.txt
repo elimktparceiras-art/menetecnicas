@@ -1,0 +1,19 @@
+MENELA — PUBLICAR PORTAL DM E MENETECNICAS NO GITHUB PAGES
+
+1. Acesse https://github.com/new e crie um repositorio publico (ex.: portal-menetecnicas).
+2. Na pagina do repositorio: Add file > Upload files.
+3. ENVIE o arquivo index.html que esta nesta pasta e opcionalmente .nojekyll (arquivo oculto).
+   Nao envie o ZIP como unico arquivo: o GitHub Pages precisa ler index.html na raiz.
+4. Clique em Commit changes.
+5. Settings > Pages > Build and deployment > Source: Deploy from a branch.
+6. Branch: main e pasta /(root). Clique Save.
+7. Seu endereco sera https://SEU-USUARIO.github.io/portal-menetecnicas/
+   Substitua SEU-USUARIO pelo seu login GitHub e portal-menetecnicas pelo nome do repositorio.
+8. No Supabase, Authentication > URL Configuration, configure Site URL com o endereco acima (terminando com /).
+   Adicione o mesmo endereco (e se quiser o padrao endereco**) em Redirect URLs.
+9. Abra o link publicado em janela anonima e teste login DM, logout e cadastro Menetecnica.
+10. Nao execute SQL novo, nao desative RLS nem insira service_role/secret no repositorio.
+
+O GitHub Pages e publico: a pagina e o codigo fonte podem ser vistos por qualquer pessoa. O banco continua no Supabase e deve manter o RLS habilitado. A chave sb_publishable do HTML e publica por definicao, mas acesso a dados e definido pelas politicas no banco.
+
+Esta versao utiliza JavaScript sem dependencia de CDN, inclui mensagens de erro de inicializacao. O funcionamento real do login e das regras do Supabase so sera confirmado depois de publicado e testado.

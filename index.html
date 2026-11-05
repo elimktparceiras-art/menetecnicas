@@ -1,0 +1,196 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ad4c77"><title>MENELA | DM e Menetécnicas</title><style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#34242e;background:#fbf8fa;--pink:#ad4c77;--muted:#806b78;--line:#ebdfe6;--soft:#f8eaf0}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #d7a3bb;outline-offset:2px}.layout{display:grid;grid-template-columns:225px 1fr;min-height:100vh}aside{background:white;border-right:1px solid var(--line);padding:25px 14px}aside h1{color:var(--pink);letter-spacing:-2px;font-size:32px;margin:0 12px}aside small{letter-spacing:2px;color:#ae7290;font-size:10px;font-weight:800;margin-left:13px}.nav{display:grid;gap:7px;margin-top:30px}.nav button{border:0;background:transparent;color:#6e5e69;text-align:left;padding:13px;border-radius:11px;font-weight:700}.nav button.active,.nav button:hover{background:var(--soft);color:var(--pink)}main{padding:26px clamp(15px,4vw,45px)}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:24px}header h1{margin:3px 0;font-size:28px;letter-spacing:-.9px}header p{margin:5px 0;color:var(--muted)}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;color:var(--pink)}.switch{padding:10px;border:1px solid var(--line);background:white;border-radius:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12px;font-weight:750}.switch select{padding:6px;border:0;color:var(--pink);font-weight:700;max-width:200px}.hero{background:linear-gradient(110deg,#b65a82,#8b3660);padding:25px;border-radius:20px;color:white;display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.hero h2{margin:0}.hero p{margin:7px 0 0;color:#ffe4f0}.btn{background:var(--pink);border:0;color:white;border-radius:10px;padding:10px 14px;font-weight:750;font-size:13px}.btn.alt{background:var(--soft);color:#914064}.btn.out{background:white;color:var(--pink);border:1px solid #dcbdcb}.btn.sm{padding:7px 10px;font-size:12px}.btn:disabled{opacity:.45;cursor:not-allowed}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:17px}.card,.stat{background:white;border:1px solid var(--line);box-shadow:0 6px 25px #6a33430b;border-radius:17px;padding:19px}.stat span{display:block;color:var(--muted);font-size:12px}.stat b{display:block;font-size:28px;margin:7px 0}.card h2{font-size:18px;margin:0 0 14px}.row{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid #f0e9ed;padding:13px 0}.row:last-child{border:0}.row strong{font-size:14px}.row p{color:var(--muted);font-size:12px;margin:4px 0}.actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.tag{font-size:11px;font-weight:750;border-radius:99px;background:var(--soft);color:#98486e;padding:6px 9px;display:inline-block}.tag.ok{background:#e4f4eb;color:#207450}.tag.pending{background:#fff1d7;color:#80601e}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.event{border:1px solid var(--line);border-radius:16px;padding:17px;background:white}.event h3{margin:12px 0;font-size:17px}.event p{font-size:12px;line-height:1.6;color:var(--muted)}.event .actions{margin-top:13px;justify-content:space-between}.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.form label{display:grid;gap:7px;color:#6d5362;font-size:12px;font-weight:750}.form label.full,.form .full{grid-column:1/-1}.form input,.form select,.form textarea{padding:12px;border:1px solid #decbd6;border-radius:10px;background:white;width:100%;min-width:0;color:#34242e}.form textarea{min-height:85px}.form .buttons{grid-column:1/-1;display:flex;justify-content:flex-end;gap:8px}.alert{padding:15px;border-radius:13px;background:#fff7e5;color:#80602b;border:1px solid #eed7a4;font-size:13px;line-height:1.6;margin-bottom:16px}.note{background:var(--soft);padding:15px;border-radius:13px;margin-bottom:16px;color:#795568;font-size:13px}.calendarline{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.week,.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.week span{text-align:center;color:var(--muted);font-size:11px;padding:7px}.day{border:1px solid var(--line);border-radius:9px;min-height:87px;text-align:left;padding:7px;background:#fff;color:#34242e;min-width:0}.day:hover,.day.selected{background:var(--soft);border-color:#c981a4}.day.empty{opacity:.25}.day small{display:block;background:#ead0dd;color:#83375b;border-radius:4px;padding:3px;margin-top:5px;font-size:10px;overflow-wrap:anywhere}.tablebox{overflow:auto}table{border-collapse:collapse;width:100%;min-width:600px}th,td{padding:12px;text-align:left;border-bottom:1px solid var(--line);font-size:12px}th{color:var(--muted)}.location{padding:18px;border:1px solid #e8c8d7;background:var(--soft);border-radius:15px;margin-bottom:16px}.location p{font-size:13px;color:#765568;line-height:1.5}.emptybox{padding:28px;border:1px dashed #dcbfce;border-radius:13px;text-align:center;color:var(--muted)}footer{color:var(--muted);font-size:11px;margin-top:25px}.toast{position:fixed;bottom:18px;right:18px;background:#34242e;color:white;border-radius:12px;padding:14px;display:none;max-width:330px;font-size:13px}@media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:730px){.layout{display:block}aside{padding:15px;border-bottom:1px solid var(--line)}.nav{display:flex;overflow:auto;margin-top:12px}.nav button{white-space:nowrap}main{padding:20px 14px}.grid,.cards,.form{grid-template-columns:1fr}.day{min-height:63px;padding:3px}.day small{font-size:8px;padding:2px}.week,.days{gap:2px}}
+
+.auth-layout{min-height:100vh;display:grid;place-items:center;padding:18px;background:linear-gradient(135deg,#fbeff4,#f0d8e3)}.auth-card{width:min(460px,100%)}.auth-card h1{color:var(--pink);font-size:34px}.auth-card form{display:grid;gap:12px}.auth-card label{display:grid;gap:6px;font-weight:650;font-size:13px}.auth-card input{width:100%;padding:12px;border:1px solid #decbd6;border-radius:10px}.auth-card .btn{padding:13px}.auth-card p{color:var(--muted);font-size:13px}.status{padding:10px;border-radius:10px;background:#fff3da;color:#75581a;margin:12px 0}.err{background:#ffeaec;color:#9e3044}.hidden{display:none!important}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}.muted{color:var(--muted)}.full{grid-column:1/-1}.tiny{font-size:11px}.adminonly{color:#8d4b67}.spinner{padding:60px;text-align:center}.danger{background:#a73553}.location-warning{font-size:12px;color:#74586a}
+
+.startup-error{background:#fff;border:1px solid #ebdfe6;border-radius:16px;max-width:580px;margin:8vh auto;padding:30px}
+</style></head><body><div id="app" aria-live="polite"><div class="auth-layout"><div class="card auth-card"><h1>MENELA</h1><h2>Portal DM &amp; Menetécnicas</h2><p>Preparando tela de acesso...</p></div></div></div><div id="toast" class="toast" role="status" aria-live="polite"></div><script>
+(function(){
+ const initial='Preparando tela de acesso...';
+ function showFailure(message){
+  const root=document.getElementById('app');
+  if(!root || !root.textContent.includes(initial))return;
+  const card=root.querySelector('.auth-card');
+  if(card){const para=card.querySelector('p');if(para)para.textContent='Falha na inicialização: '+message;
+   const button=document.createElement('button');button.textContent='Atualizar página';button.className='btn';button.onclick=()=>location.reload();card.appendChild(button);}
+ }
+ window.addEventListener('error',e=>showFailure(e.message||'Erro de JavaScript'));
+ window.addEventListener('unhandledrejection',e=>showFailure(String(e.reason?.message||e.reason||'Erro de conexão')));
+ setTimeout(()=>showFailure('O JavaScript não iniciou. Confira o deploy publicado no Netlify e o console F12.'),5000);
+})();
+</script><script>
+// Cliente leve com a API HTTPS oficial Supabase Auth + PostgREST.
+// Não precisa carregar bibliotecas de CDN de terceiros.
+function createMenelaClient(base, key) {
+ const storeKey='menela-auth-session-v3', listeners=[];
+ let active=null;
+ try {active=JSON.parse(localStorage.getItem(storeKey)||'null');} catch (_) {}
+ function save(s){active=s||null;try {if(s)localStorage.setItem(storeKey,JSON.stringify(s));else localStorage.removeItem(storeKey);}catch(_){} }
+ function notify(event){for(const cb of listeners)try{cb(event,active)}catch(e){console.warn('Auth listener:',e)}}
+ function fail(e){return {data:null,error:{message:e.message||String(e),code:e.code||''}}}
+ async function request(path,options={}) {
+   const headers={'apikey':key,'Content-Type':'application/json',...options.headers};
+   if(active?.access_token) headers.Authorization='Bearer '+active.access_token;
+   // Sem token de usuário, apenas apikey publicável (não é JWT).
+   const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),11000);
+   try {
+     const r=await fetch(base+path,{...options,headers,signal:ctrl.signal});
+     const raw=await r.text();let payload=null;
+     if(raw){try{payload=JSON.parse(raw)}catch(_){payload=raw}}
+     if(!r.ok){const e=new Error(payload?.msg||payload?.message||payload?.error_description||payload?.error||`Erro HTTP ${r.status}`);e.code=payload?.code||String(r.status);throw e;}
+     return payload;
+   }catch(e){if(e.name==='AbortError')throw new Error('O Supabase não respondeu em 11 segundos. Confira a conexão e tente novamente.');throw e}
+   finally{clearTimeout(timer)}
+ }
+ async function authRequest(path,method='POST',data=null){try{return {data:await request('/auth/v1/'+path,{method,body:data===null?undefined:JSON.stringify(data)}),error:null}}catch(e){return fail(e)}}
+ async function renew(){if(!active?.refresh_token)return active;const r=await authRequest('token?grant_type=refresh_token','POST',{refresh_token:active.refresh_token});if(r.error){save(null);notify('SIGNED_OUT');return null;} const x=r.data;save({...x,user:x.user||active.user});notify('TOKEN_REFRESHED');return active}
+ async function tokenReady(){if(active?.expires_at && Date.now()/1000>active.expires_at-60)await renew();}
+ function sessionFrom(x){return {...x,expires_at:Math.floor(Date.now()/1000)+(x.expires_in||3600)}}
+ const auth={
+  async getSession(){await tokenReady();return {data:{session:active},error:null}},
+  async signInWithPassword({email,password}){const r=await authRequest('token?grant_type=password','POST',{email,password});if(!r.error){save(sessionFrom(r.data));notify('SIGNED_IN');return {data:{session:active,user:active.user},error:null}}return r},
+  async signUp({email,password,options}){const r=await authRequest('signup','POST',{email,password,data:options?.data||{}});if(!r.error&&r.data?.access_token){save(sessionFrom(r.data));notify('SIGNED_IN')}return r},
+  async signOut(){try{if(active?.access_token)await authRequest('logout','POST')}catch(_){}save(null);notify('SIGNED_OUT');return {error:null}},
+  async resetPasswordForEmail(email,{redirectTo}={}){return authRequest('recover'+(redirectTo?'?redirect_to='+encodeURIComponent(redirectTo):''),'POST',{email})},
+  async updateUser(payload){const r=await authRequest('user','PUT',payload);if(!r.error&&active)save({...active,user:r.data});return r},
+  onAuthStateChange(callback){listeners.push(callback);return {data:{subscription:{unsubscribe(){const i=listeners.indexOf(callback);if(i>=0)listeners.splice(i,1)}}}}}
+ };
+ // API fluente PostgREST equivalente às operações usadas neste portal.
+ function from(table){
+  const q={method:'GET',params:new URLSearchParams(),headers:{},body:null};
+  const obj={
+   select(columns='*'){q.params.set('select',columns);return obj},
+   order(column,{ascending=true}={}){q.params.set('order',column+'.'+(ascending?'asc':'desc'));return obj},
+   eq(column,value){q.params.set(column,'eq.'+value);return obj},
+   insert(value){q.method='POST';q.body=JSON.stringify(value);q.headers.Prefer='return=minimal';return obj},
+   update(value){q.method='PATCH';q.body=JSON.stringify(value);q.headers.Prefer='return=minimal';return obj},
+   delete(){q.method='DELETE';q.headers.Prefer='return=minimal';return obj},
+   async then(resolve,reject){try{await tokenReady();const url='/rest/v1/'+encodeURIComponent(table)+(q.params.toString()?'?'+q.params.toString():'');const data=await request(url,{method:q.method,headers:q.headers,body:q.body});return resolve({data,error:null})}catch(e){return resolve({data:null,error:{message:e.message,code:e.code||''}})}},
+  };return obj
+ }
+ // Recuperação de senha: Supabase pode retornar tokens no fragmento do URL.
+ const hash=new URLSearchParams(location.hash.replace(/^#/,''));
+ if(hash.get('access_token')&&hash.get('refresh_token')){
+   save({access_token:hash.get('access_token'),refresh_token:hash.get('refresh_token'),token_type:'bearer',expires_at:Math.floor(Date.now()/1000)+Number(hash.get('expires_in')||3600),user:active?.user||{id:''}});
+   history.replaceState(null,'',location.pathname+location.search);
+   queueMicrotask(async()=>{try{const r=await authRequest('user','GET');if(!r.error&&active){save({...active,user:r.data});notify('PASSWORD_RECOVERY')}}catch(_){}});
+ }
+ return {auth,from};
+}
+
+'use strict';
+// Cliente PUBLICÁVEL: autorização real depende das políticas RLS no Supabase.
+const SUPABASE_URL='https://ghohswbdqenviduefcll.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_hYtgJgRelzH6JIffkh8puA_nbiGbkcF';
+const client=createMenelaClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+const $=id=>document.getElementById(id);
+const h=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=d=>new Date(d).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric',timeZone:'America/Sao_Paulo'});
+const fmtTime=d=>new Date(d).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'});
+const UF='AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO'.split(' ');
+let loadError='',initializing=true,recoveryMode=window.__menelaRecovery===true;
+ let session=null,profile=null,actions=[],profiles=[],registrations=[],page='home',selected='',month=new Date().toISOString().slice(0,7),edit=null,geo=null,geoMsg='',radius=100,busy=false,authMode='login',pendingEmail='';
+const isDM=()=>profile?.role==='dm';
+function toast(message,error=false){const el=$('toast');el.textContent=message;el.style.display='block';el.style.background=error?'#9c3450':'#34242e';clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.style.display='none',5500)}
+function errMessage(e){if(!e)return 'Erro desconhecido';if(e.code==='23505')return 'Esse registro já existe.';if(e.code==='42501')return 'Operação não permitida. Verifique suas permissões.';if(e.message?.includes('Invalid login'))return 'E-mail ou senha incorretos.';return e.message||String(e)}
+async function readAll(){
+ if(!session?.user?.id)return;
+ // Busque primeiro o perfil da própria conta. Não exija acesso irrestrito a todos os perfis.
+ const own=await client.from('profiles').select('id,full_name,city,state,postal_code,role').eq('id',session.user.id);
+ if(own.error)throw Error('Não foi possível consultar seu perfil: '+errMessage(own.error));
+ profile=own.data?.[0]||null;
+ if(!profile)throw Error('Conta autenticada, mas sem perfil. Solicite ao administrador verificar a criação do perfil no Supabase.');
+ const dm=isDM();
+ const queries=[
+  dm?client.from('profiles').select('id,full_name,city,state,postal_code,role').order('full_name'):Promise.resolve({data:[profile],error:null}),
+  client.from('actions').select('id,title,description,start_at,city,state,venue,latitude,longitude,capacity,published,created_by').order('start_at'),
+  client.from('registrations').select('id,action_id,person_id,status,created_at').order('created_at',{ascending:false})
+ ];
+ const [p,a,r]=await Promise.all(queries);
+ const errors=[];
+ if(p.error)errors.push('Perfis: '+errMessage(p.error)); else profiles=p.data||[profile];
+ if(a.error)errors.push('Ações: '+errMessage(a.error)); else actions=a.data||[];
+ if(r.error)errors.push('Inscrições: '+errMessage(r.error)); else registrations=r.data||[];
+ if(errors.length)throw Error(errors.join(' | '));
+}
+async function refresh(){
+ if(!session){loadError='';render();return}
+ try{await readAll();loadError='';render()}
+ catch(e){console.error('Erro de dados:',e);loadError=errMessage(e);render();toast(loadError,true)}
+}
+async function submit(fn,{reload=true}={}){
+ if(busy)return;
+ busy=true;
+ try{await fn();if(reload&&session)await refresh();else render()}
+ catch(e){toast(errMessage(e),true)}
+ finally{busy=false}
+}
+function btn(t,a,c=''){return `<button type="button" class="btn ${c}" data-a="${h(a)}">${h(t)}</button>`}
+function tag(t,c=''){return `<span class="tag ${c}">${h(t)}</span>`}
+function options(value){return '<option value="">Selecione</option>'+UF.map(u=>`<option value="${u}" ${value===u?'selected':''}>${u}</option>`).join('')}
+function available(e){return e.published&&new Date(e.start_at)>new Date()}
+function approvedCount(e){return registrations.filter(r=>r.action_id===e.id&&r.status==='aprovada').length}
+function ownRegistration(e){return registrations.find(r=>r.action_id===e.id&&r.person_id===session.user.id)}
+function actionButton(e){const r=ownRegistration(e);if(r)return tag('Inscrição '+r.status,r.status==='aprovada'?'ok':'pending');if(!available(e))return tag('Encerrada');if(approvedCount(e)>=e.capacity)return tag('Sem vagas');return btn('Inscrever-me','apply:'+e.id)}
+function top(title,sub){return `<header><div><span class="eyebrow">MENELA · ${isDM()?'GESTÃO DM':'MENETÉCNICAS'}</span><h1>${h(title)}</h1><p>${h(sub)}</p></div><div class="actions"><span class="tag">${h(profile.full_name||session.user.email)}</span>${btn('Atualizar','refresh','alt sm')}${btn('Sair','logout','out sm')}</div></header>`}
+function shell(body){const menu=isDM()?[['home','▦ Painel'],['agenda','▤ Agenda'],['people','♙ Menetécnicas'],['apps','✓ Inscrições'],['profile','♙ Meu cadastro']]:[['home','⌂ Início'],['agenda','▤ Calendário'],['near','⌖ Perto de mim'],['apps','✓ Minhas inscrições'],['profile','♙ Meu cadastro']];$('app').innerHTML=`<div class="layout"><aside><h1>MENELA</h1><small>DM & MENETÉCNICAS</small><nav class="nav">${menu.map(([k,t])=>`<button data-nav="${k}" class="${page===k?'active':''}">${t}</button>`).join('')}</nav></aside><main>${body}<footer>Portal MENELA · dados salvos no Supabase · o GPS é opcional e não é enviado ao banco.</footer></main></div>`}
+function stats(rows){return `<div class="stats">${rows.map(([v,l])=>`<div class="stat"><span>${h(l)}</span><b>${h(v)}</b></div>`).join('')}</div>`}
+function eventCard(e){return `<article class="event">${tag(e.published?'Publicada':'Rascunho',e.published?'ok':'pending')}<h3>${h(e.title)}</h3><p>📅 ${fmt(e.start_at)} às ${fmtTime(e.start_at)}<br>📍 ${h(e.city)} / ${h(e.state)} · ${h(e.venue)}<br>👥 ${approvedCount(e)}/${e.capacity} vagas aprovadas</p><p>${h(e.description)}</p><div class="actions">${isDM()?btn('Editar','editEvent:'+e.id,'alt'):actionButton(e)}</div></article>`}
+function home(){const mine=registrations.filter(r=>r.person_id===session.user.id);const upcoming=actions.filter(e=>new Date(e.start_at)>=new Date()).slice(0,4);if(isDM()){return top('Central da DM','Gerencie ações e inscrições em um só lugar.')+`<div class="hero"><div><h2>Gestão de oportunidades 🩷</h2><p>Organize sua equipe e publique novas ações.</p></div>${btn('+ Nova ação','newEvent','out')}</div>`+stats([[profiles.filter(p=>p.role==='menetecnica').length,'Menetécnicas'],[actions.length,'Ações cadastradas'],[registrations.length,'Inscrições'],[registrations.filter(r=>r.status==='pendente').length,'Pendentes']])+`<div class="grid"><section class="card"><h2>Próximas ações</h2>${upcoming.map(e=>`<div class="row"><div><strong>${h(e.title)}</strong><p>${fmt(e.start_at)} · ${h(e.city)}</p></div>${btn('Editar','editEvent:'+e.id,'alt sm')}</div>`).join('')||'<div class="emptybox">Nenhuma ação futura.</div>'}</section><section class="card"><h2>Inscrições pendentes</h2>${registrations.filter(r=>r.status==='pendente').slice(0,5).map(r=>{const p=profiles.find(p=>p.id===r.person_id),e=actions.find(e=>e.id===r.action_id);return `<div class="row"><div><strong>${h(p?.full_name||'Profissional')}</strong><p>${h(e?.title||'Ação')}</p></div>${btn('Analisar','apps','alt sm')}</div>`}).join('')||'<div class="emptybox">Sem pendências.</div>'}</section></div>`}
+return top('Olá, '+(profile.full_name?.split(' ')[0]||'Menetécnica')+'!','Acompanhe as oportunidades disponíveis.')+`<div class="hero"><div><h2>Faça parte das ações MENELA</h2><p>Descubra eventos e candidate-se pelo calendário.</p></div>${btn('Perto de mim','near','out')}</div>`+stats([[actions.filter(available).length,'Ações disponíveis'],[mine.length,'Minhas inscrições'],[mine.filter(r=>r.status==='pendente').length,'Em análise'],[mine.filter(r=>r.status==='aprovada').length,'Aprovadas']])+`<div class="cards">${actions.filter(available).slice(0,6).map(eventCard).join('')||'<div class="emptybox">Nenhuma ação disponível no momento.</div>'}</div>`}
+function agenda(){const [y,m]=month.split('-').map(Number),start=new Date(y,m-1,1).getDay(),count=new Date(y,m,0).getDate(),total=Math.ceil((start+count)/7)*7;let cells='';for(let i=0;i<total;i++){let n=i-start+1;if(n<1||n>count){cells+='<div class="day empty"></div>';continue}const date=month+'-'+String(n).padStart(2,'0');const evs=actions.filter(e=>new Date(e.start_at).toLocaleDateString('en-CA',{timeZone:'America/Sao_Paulo'})===date);cells+=`<button class="day ${selected===date?'selected':''}" data-day="${date}"><b>${n}</b>${evs.map(e=>`<small>${h(e.title)}</small>`).join('')}</button>`}const subset=actions.filter(e=>!selected||new Date(e.start_at).toLocaleDateString('en-CA',{timeZone:'America/Sao_Paulo'})===selected);return top('Agenda de ações',isDM()?'Crie, edite e publique oportunidades.':'Inscreva-se nas oportunidades do calendário.')+`<section class="card" style="margin-bottom:18px"><div class="calendarline">${btn('‹','prev','alt sm')}<h2 style="margin:0;text-transform:capitalize">${new Date(y,m-1,1).toLocaleDateString('pt-BR',{month:'long',year:'numeric'})}</h2>${btn('›','next','alt sm')}</div><div class="week">${['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'].map(d=>`<span>${d}</span>`).join('')}</div><div class="days">${cells}</div><div class="toolbar">${selected?btn('Ver todas','clearDay','alt sm'):''}${isDM()?btn('+ Nova ação','newEvent'):''}</div></section><div class="cards">${subset.map(eventCard).join('')||'<div class="emptybox">Sem ações nessa data.</div>'}</div>`}
+function people(){return top('Menetécnicas','Cadastros e endereços das profissionais.')+`<div class="note">A Menetécnica deve criar a conta pelo cadastro com e-mail. O acesso DM não pode criar senhas de terceiros por esta interface.</div><div class="card"><div class="tablebox"><table><thead><tr><th>Nome</th><th>Cidade</th><th>UF</th><th>CEP</th><th>Ação</th></tr></thead><tbody>${profiles.filter(p=>p.role==='menetecnica').map(p=>`<tr><td>${h(p.full_name||'Sem nome')}</td><td>${h(p.city)}</td><td>${h(p.state)}</td><td>${h(p.postal_code)}</td><td>${btn('Editar','editPerson:'+p.id,'alt sm')}</td></tr>`).join('')}</tbody></table></div></div>`}
+function profileForm(other=false){const p=other?profiles.find(p=>p.id===edit):profile;if(!p)return top('Cadastro','')+'<p>Perfil não encontrado.</p>';return top(other?'Editar Menetécnica':'Meu cadastro','Atualize nome completo, cidade, estado e CEP.')+`<div class="card"><form id="formPerson" class="form"><label class="full">Nome completo<input required minlength="3" maxlength="100" name="full_name" value="${h(p.full_name)}"></label><label>CEP<input required name="postal_code" inputmode="numeric" pattern="[0-9]{5}-?[0-9]{3}" placeholder="00000-000" value="${h(p.postal_code)}"></label><label>Estado<select required name="state">${options(p.state)}</select></label><label>Cidade<input required maxlength="70" name="city" value="${h(p.city)}"></label><div class="buttons">${btn('Cancelar',other?'people':'home','out')}<button class="btn" type="submit">Salvar alterações</button></div></form></div>`}
+function eventForm(){const e=actions.find(a=>a.id===edit),date=e?new Date(new Date(e.start_at).getTime()-3*3600*1000).toISOString().slice(0,16):'';return top(e?'Editar ação':'Nova ação','Informe local, data e vagas disponíveis.')+`<div class="card"><div class="note">Use coordenadas de um local público da ação. Não cadastre a localização residencial das profissionais.</div><form id="formEvent" class="form"><label class="full">Título da ação<input required minlength="3" maxlength="120" name="title" value="${h(e?.title||'')}"></label><label>Data e horário de Brasília<input type="datetime-local" required name="start" value="${h(date)}"></label><label>Vagas<input type="number" min="1" max="500" required name="capacity" value="${h(e?.capacity??5)}"></label><label>Cidade<input required name="city" value="${h(e?.city||'')}"></label><label>UF<select required name="state">${options(e?.state)}</select></label><label class="full">Local / endereço público<input required maxlength="200" name="venue" value="${h(e?.venue||'')}"></label><label>Latitude (opcional)<input name="latitude" type="number" step="any" min="-90" max="90" value="${h(e?.latitude??'')}"></label><label>Longitude (opcional)<input name="longitude" type="number" step="any" min="-180" max="180" value="${h(e?.longitude??'')}"></label><label class="full">Descrição<textarea name="description" maxlength="2000">${h(e?.description||'')}</textarea></label><label class="full"><span><input type="checkbox" name="published" style="width:auto" ${e?.published?'checked':''}> Publicar ação para as Menetécnicas</span></label><div class="buttons">${btn('Cancelar','agenda','out')}<button type="submit" class="btn">Salvar ação</button></div></form></div>`}
+function apps(){const all=isDM()?registrations:registrations.filter(r=>r.person_id===session.user.id);return top(isDM()?'Inscrições recebidas':'Minhas inscrições',isDM()?'Aprove ou recuse inscrições.':'Acompanhe suas candidaturas.')+`<div class="card">${all.map(r=>{let e=actions.find(x=>x.id===r.action_id),p=profiles.find(x=>x.id===r.person_id);return `<div class="row"><div><strong>${h(e?.title||'Ação')}</strong><p>${isDM()?h(p?.full_name||'Profissional')+' · ':''}${e?fmt(e.start_at):''} · ${h(e?.city||'')}</p></div><div class="actions">${tag(r.status,r.status==='aprovada'?'ok':r.status==='pendente'?'pending':'')}${isDM()&&r.status==='pendente'?btn('Aprovar','approve:'+r.id,'sm')+btn('Recusar','reject:'+r.id,'out sm'):''}</div></div>`}).join('')||'<div class="emptybox">Nenhuma inscrição.</div>'}</div>`}
+const cityCenter={'Campinas|SP':[-22.9056,-47.0608],'São Paulo|SP':[-23.5505,-46.6333],'Curitiba|PR':[-25.4284,-49.2733],'Rio de Janeiro|RJ':[-22.9068,-43.1729]};
+function dist(a,b,c,d){let rad=x=>x*Math.PI/180;return 12742*Math.asin(Math.min(1,Math.sqrt(Math.sin(rad(c-a)/2)**2+Math.cos(rad(a))*Math.cos(rad(c))*Math.sin(rad(d-b)/2)**2)))}
+function near(){const origin=geo?[geo.lat,geo.lon]:cityCenter[(profile.city||'')+'|'+(profile.state||'')];const matches=actions.filter(available).map(e=>({...e,km:origin&&e.latitude!=null&&e.longitude!=null?dist(...origin,e.latitude,e.longitude):null})).filter(e=>e.km!=null&&e.km<=radius).sort((a,b)=>a.km-b.km);return top('Ações próximas','Encontre oportunidades perto de você.')+`<div class="location"><h2>Localização opcional</h2><p>${geo?'Localização autorizada nesta sessão. Precisão aproximada: '+Math.round(geo.accuracy)+' m.':'Use o GPS ou a cidade cadastrada (quando disponível) para calcular distâncias aproximadas.'}</p><div class="toolbar">${btn('Usar minha localização','gps')}${geo?btn('Apagar localização','clearGps','out'):''}<label>Raio <select id="radius">${[25,50,100,200,500].map(n=>`<option value="${n}" ${n===radius?'selected':''}>${n} km</option>`).join('')}</select></label></div>${geoMsg?`<p class="location-warning">${h(geoMsg)}</p>`:''}<p class="tiny">GPS solicitado apenas ao tocar no botão; posição mantida só na memória da página. Distâncias em linha reta.</p></div><div class="cards">${matches.map(e=>`<article class="event">${tag(Math.round(e.km)+' km','ok')}<h3>${h(e.title)}</h3><p>${fmt(e.start_at)} · ${fmtTime(e.start_at)} · ${h(e.city)} / ${h(e.state)}</p><p>${h(e.description)}</p>${actionButton(e)}</article>`).join('')||'<div class="emptybox">Nenhuma ação localizada nesse raio. Se o GPS estiver indisponível, cadastre sua cidade e tente novamente.</div>'}</div>`}
+function authScreen(){
+ const signup=authMode==='signup',reset=authMode==='reset',update=authMode==='update';
+ const heading=update?'Definir nova senha':reset?'Recuperar senha':signup?'Criar conta de Menetécnica':'Entrar no portal';
+ const emailField=update?'':`<label>E-mail<input name="email" type="email" required autocomplete="email" value="${h(pendingEmail)}"></label>`;
+ const passwordField=reset?'':`<label>${update?'Nova senha':'Senha'}<input type="password" name="password" required minlength="8" autocomplete="${signup||update?'new-password':'current-password'}"></label>`;
+ const nameField=signup?'<label>Nome completo<input type="text" name="name" required minlength="3" maxlength="100" autocomplete="name"></label>':'';
+ const footerButtons=update?'':btn('Entrar','login','alt sm')+btn('Criar conta','signup','alt sm')+btn('Esqueci a senha','reset','out sm');
+ $('app').innerHTML=`<div class="auth-layout"><div class="card auth-card"><h1>MENELA</h1><p style="letter-spacing:2px">PORTAL DM & MENETÉCNICAS</p><h2>${heading}</h2><p>Seu acesso é protegido pelo Supabase Auth.</p><form id="authForm">${nameField}${emailField}${passwordField}<button type="submit" class="btn">${update?'Salvar nova senha':reset?'Enviar recuperação':signup?'Cadastrar':'Entrar'}</button></form><div class="toolbar">${footerButtons}</div><p class="tiny">Somente pessoas autorizadas devem usar o portal. Novas contas começam sem privilégios de DM.</p></div></div>`;
+}
+function render(){
+ if(authMode==='update'){authScreen();return}
+ if(!session){authScreen();return}
+ if(!profile){
+  const detail=loadError||'O perfil ainda não está disponível. Verifique sua conta e as políticas de acesso no Supabase.';
+  $('app').innerHTML='<div class="auth-layout"><div class="card auth-card"><h1>MENELA</h1><h2>Não foi possível abrir seu painel</h2><p class="status err">'+h(detail)+'</p><div class="toolbar">'+btn('Tentar novamente','refresh','alt')+btn('Sair','logout','out')+'</div></div></div>';
+  return;
+ }
+ if(!isDM()&&['people','personForm','eventForm'].includes(page))page='home';
+ const content=page==='home'?home():page==='agenda'?agenda():page==='people'?people():page==='apps'?apps():page==='near'?near():page==='profile'?profileForm():page==='personForm'?profileForm(true):page==='eventForm'?eventForm():home();
+ shell((loadError?'<div class="alert">Alguns dados não puderam ser carregados: '+h(loadError)+'</div>':'')+content);
+}
+function go(p){page=p;render()}
+async function gps(){if(!navigator.geolocation){geoMsg='GPS indisponível nesse navegador.';return render()}navigator.geolocation.getCurrentPosition(pos=>{geo={lat:pos.coords.latitude,lon:pos.coords.longitude,accuracy:pos.coords.accuracy};geoMsg='';render()},e=>{geo=null;geoMsg=e.code===1?'Permissão de GPS negada.':'Não foi possível obter localização. Use HTTPS e permita o acesso.';render()},{timeout:12000,maximumAge:0,enableHighAccuracy:false})}
+document.addEventListener('click',async ev=>{const nav=ev.target.closest('[data-nav]');if(nav)return go(nav.dataset.nav);const day=ev.target.closest('[data-day]');if(day){selected=day.dataset.day;return render()}const el=ev.target.closest('[data-a]');if(!el)return;const a=el.dataset.a;if(['login','signup','reset'].includes(a)){authMode=a;return render()}if(a==='logout')return submit(async()=>{await client.auth.signOut();session=null;profile=null;loadError='';profiles=[];actions=[];registrations=[];page='home';authMode='login'}, {reload:false});if(!session)return;if(['home','agenda','people','apps','near','profile'].includes(a))return go(a);if(a==='refresh')return refresh();if(a==='newEvent'&&isDM()){edit=null;return go('eventForm')}if(a.startsWith('editEvent:')&&isDM()){edit=a.split(':')[1];return go('eventForm')}if(a.startsWith('editPerson:')&&isDM()){edit=a.split(':')[1];return go('personForm')}if(a==='clearDay'){selected='';return render()}if(a==='prev'||a==='next'){let [y,m]=month.split('-').map(Number),d=new Date(y,m-1+(a==='next'?1:-1),1);month=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');selected='';return render()}if(a==='gps')return gps();if(a==='clearGps'){geo=null;geoMsg='';return render()}if(a.startsWith('apply:')&&!isDM())return submit(async()=>{const id=a.split(':')[1];const e=actions.find(x=>x.id===id);if(!e||!available(e))throw Error('Ação indisponível.');const {error}=await client.from('registrations').insert({action_id:id,person_id:session.user.id,status:'pendente'});if(error)throw error;toast('Inscrição enviada para a DM.')});if((a.startsWith('approve:')||a.startsWith('reject:'))&&isDM())return submit(async()=>{const id=a.split(':')[1],status=a.startsWith('approve:')?'aprovada':'recusada';const {error}=await client.from('registrations').update({status}).eq('id',id);if(error)throw error;toast('Inscrição atualizada.')})});
+document.addEventListener('change',ev=>{if(ev.target.id==='radius'){radius=Number(ev.target.value);render()}});
+document.addEventListener('submit',async ev=>{const form=ev.target;if(!['authForm','formPerson','formEvent'].includes(form.id))return;ev.preventDefault();const fd=new FormData(form),v=k=>String(fd.get(k)||'').trim();if(form.id==='authForm')return submit(async()=>{if(authMode==='update'){const {error}=await client.auth.updateUser({password:v('password')});if(error)throw error;authMode='login';recoveryMode=false;toast('Senha atualizada.');return}pendingEmail=v('email');if(authMode==='reset'){const {error}=await client.auth.resetPasswordForEmail(pendingEmail,{redirectTo:location.origin+location.pathname});if(error)throw error;toast('Se o e-mail estiver cadastrado, você receberá instruções.');return}if(authMode==='signup'){const {error}=await client.auth.signUp({email:pendingEmail,password:v('password'),options:{data:{full_name:v('name')}}});if(error)throw error;toast('Cadastro solicitado. Confira o e-mail para confirmar sua conta.');authMode='login';return}const {error}=await client.auth.signInWithPassword({email:pendingEmail,password:v('password')});if(error)throw error;toast('Login realizado.')},{reload:false});if(!session||!profile)return;if(form.id==='formPerson'){const id=page==='personForm'&&isDM()?edit:session.user.id;return submit(async()=>{const patch={full_name:v('full_name'),city:v('city'),state:v('state'),postal_code:v('postal_code').replace(/^(\d{5})(\d{3})$/,'$1-$2')};const {error}=await client.from('profiles').update(patch).eq('id',id);if(error)throw error;page=id===session.user.id?'profile':'people';toast('Cadastro atualizado.')})}if(form.id==='formEvent'&&isDM())return submit(async()=>{const local=v('start');if(!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(local))throw Error('Data inválida.');const lat=v('latitude')===''?null:Number(v('latitude')),lon=v('longitude')===''?null:Number(v('longitude'));if((lat===null)!==(lon===null))throw Error('Latitude e longitude devem ser preenchidas juntas.');const fields={title:v('title'),description:v('description'),start_at:local+':00-03:00',city:v('city'),state:v('state'),venue:v('venue'),latitude:lat,longitude:lon,capacity:Number(v('capacity')),published:fd.get('published')==='on'};let result=edit?await client.from('actions').update(fields).eq('id',edit):await client.from('actions').insert({...fields,created_by:session.user.id});if(result.error)throw result.error;page='agenda';month=local.slice(0,7);selected='';toast('Ação salva com sucesso.')})});
+async function boot(){
+ try{
+  const {data,error}=await client.auth.getSession();
+  if(error)loadError=errMessage(error);
+  session=data?.session||null;
+  if(session?.user?.id)await refresh();else render();
+  if(recoveryMode&&session){authMode='update';render()}
+ }catch(e){console.error('Erro ao iniciar:',e);loadError=errMessage(e);render()}
+ client.auth.onAuthStateChange((event,s)=>{
+  if(event==='SIGNED_OUT'){session=null;profile=null;loadError='';render()}
+  else if(event==='PASSWORD_RECOVERY'){session=s;authMode='update';render()}
+  else if(event==='SIGNED_IN'||event==='TOKEN_REFRESHED'){
+   session=s;
+   if(recoveryMode){authMode='update';render();return}
+   refresh();
+  }
+ });
+}
+
+render();
+boot().catch(e=>{console.error('Falha na inicialização:',e);const el=document.getElementById('app');if(el)el.innerHTML='<section class="startup-error"><h1>MENELA</h1><h2>Não foi possível iniciar</h2><p id="startup-msg"></p><button onclick="location.reload()">Tentar novamente</button></section>';document.getElementById('startup-msg').textContent=e.message||String(e);});
+</script></body></html>
